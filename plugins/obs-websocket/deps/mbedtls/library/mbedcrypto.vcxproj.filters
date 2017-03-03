@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\aes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\aesni.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\arc4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\asn1parse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\asn1write.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\base64.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\bignum.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\blowfish.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\camellia.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\ccm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\cipher.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\cipher_wrap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\cmac.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\ctr_drbg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\des.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\dhm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\ecdh.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\ecdsa.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\ecjpake.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\ecp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\ecp_curves.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\entropy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\entropy_poll.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\gcm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\havege.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\hmac_drbg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\md.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\md2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\md4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\md5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\md_wrap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\memory_buffer_alloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\oid.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\padlock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\pem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\pk.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\pk_wrap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\pkcs12.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\pkcs5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\pkparse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\pkwrite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\platform.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\ripemd160.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\rsa.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\sha1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\sha256.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\sha512.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\threading.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\timing.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\version.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\version_features.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\xtea.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library\mbedcrypto_automoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8E564DFA-C133-3A8C-B009-A40265BDF416}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

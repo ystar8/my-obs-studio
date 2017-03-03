@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{4F4F5CAB-CE20-34AE-9A49-D22CF81E6723}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\build\plugins\obs-websocket;D:\workspace_cpp\obs-studio\plugins\obs-websocket;D:\workspace_cpp\obs-studio\libobs\..\UI\obs-frontend-api;D:\workspace_cpp\obs-studio\deps\mbedtls\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\build\plugins\obs-websocket;D:\workspace_cpp\obs-studio\plugins\obs-websocket;D:\workspace_cpp\obs-studio\libobs\..\UI\obs-frontend-api;D:\workspace_cpp\obs-studio\deps\mbedtls\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\build\plugins\obs-websocket;D:\workspace_cpp\obs-studio\plugins\obs-websocket;D:\workspace_cpp\obs-studio\libobs\..\UI\obs-frontend-api;D:\workspace_cpp\obs-studio\deps\mbedtls\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\build\plugins\obs-websocket;D:\workspace_cpp\obs-studio\plugins\obs-websocket;D:\workspace_cpp\obs-studio\libobs\..\UI\obs-frontend-api;D:\workspace_cpp\obs-studio\deps\mbedtls\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/workspace_cpp/obs-studio/plugins/obs-websocket/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -HD:/workspace_cpp/obs-studio -BD:/workspace_cpp/obs-studio/build --check-stamp-file D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/workspace_cpp/obs-studio/plugins/obs-websocket/CMakeLists.txt;D:\workspace_cpp\obs-studio\plugins\obs-websocket\CMakeLists.txt;D:\workspace_cpp\obs-studio\plugins\obs-websocket\external\FindLibObs.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPkgConfig.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageMessage.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageMessage.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\workspace_cpp\obs-studio\cmake\external\ObsPluginHelpers.cmake;D:\workspace_cpp\obs-studio\build\libobs\LibObsConfigVersion.cmake;D:\workspace_cpp\obs-studio\build\libobs\LibObsConfig.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5WebSockets\Qt5WebSocketsConfigVersion.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5WebSockets\Qt5WebSocketsConfig.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Network\Qt5Network_QNativeWifiEnginePlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\AutogenInfo.cmake.in;D:\workspace_cpp\obs-studio\plugins\obs-websocket\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/workspace_cpp/obs-studio/plugins/obs-websocket/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -HD:/workspace_cpp/obs-studio -BD:/workspace_cpp/obs-studio/build --check-stamp-file D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/workspace_cpp/obs-studio/plugins/obs-websocket/CMakeLists.txt;D:\workspace_cpp\obs-studio\plugins\obs-websocket\CMakeLists.txt;D:\workspace_cpp\obs-studio\plugins\obs-websocket\external\FindLibObs.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPkgConfig.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageMessage.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageMessage.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\workspace_cpp\obs-studio\cmake\external\ObsPluginHelpers.cmake;D:\workspace_cpp\obs-studio\build\libobs\LibObsConfigVersion.cmake;D:\workspace_cpp\obs-studio\build\libobs\LibObsConfig.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5WebSockets\Qt5WebSocketsConfigVersion.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5WebSockets\Qt5WebSocketsConfig.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Network\Qt5Network_QNativeWifiEnginePlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\AutogenInfo.cmake.in;D:\workspace_cpp\obs-studio\plugins\obs-websocket\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/workspace_cpp/obs-studio/plugins/obs-websocket/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -HD:/workspace_cpp/obs-studio -BD:/workspace_cpp/obs-studio/build --check-stamp-file D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/workspace_cpp/obs-studio/plugins/obs-websocket/CMakeLists.txt;D:\workspace_cpp\obs-studio\plugins\obs-websocket\CMakeLists.txt;D:\workspace_cpp\obs-studio\plugins\obs-websocket\external\FindLibObs.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPkgConfig.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageMessage.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageMessage.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\workspace_cpp\obs-studio\cmake\external\ObsPluginHelpers.cmake;D:\workspace_cpp\obs-studio\build\libobs\LibObsConfigVersion.cmake;D:\workspace_cpp\obs-studio\build\libobs\LibObsConfig.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5WebSockets\Qt5WebSocketsConfigVersion.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5WebSockets\Qt5WebSocketsConfig.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Network\Qt5Network_QNativeWifiEnginePlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\AutogenInfo.cmake.in;D:\workspace_cpp\obs-studio\plugins\obs-websocket\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/workspace_cpp/obs-studio/plugins/obs-websocket/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -HD:/workspace_cpp/obs-studio -BD:/workspace_cpp/obs-studio/build --check-stamp-file D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/workspace_cpp/obs-studio/plugins/obs-websocket/CMakeLists.txt;D:\workspace_cpp\obs-studio\plugins\obs-websocket\CMakeLists.txt;D:\workspace_cpp\obs-studio\plugins\obs-websocket\external\FindLibObs.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPkgConfig.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageMessage.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageMessage.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\workspace_cpp\obs-studio\cmake\external\ObsPluginHelpers.cmake;D:\workspace_cpp\obs-studio\build\libobs\LibObsConfigVersion.cmake;D:\workspace_cpp\obs-studio\build\libobs\LibObsConfig.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5WebSockets\Qt5WebSocketsConfigVersion.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5WebSockets\Qt5WebSocketsConfig.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Network\Qt5Network_QNativeWifiEnginePlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\workspace_cpp\qt5.8_x64\5.8\msvc2015_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\AutogenInfo.cmake.in;D:\workspace_cpp\obs-studio\plugins\obs-websocket\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/ZERO_CHECK.vcxproj">
+      <Project>74388FD1-BA1D-3A6F-B51D-6AF72BD69E4F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/obs-websocket.vcxproj">
+      <Project>46C7EA07-F1F7-3774-BC04-F2919D6A74F7</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

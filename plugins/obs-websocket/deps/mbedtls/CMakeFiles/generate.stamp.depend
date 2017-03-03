@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+D:/workspace_cpp/obs-studio/plugins/obs-websocket/deps/mbedtls/CMakeLists.txt
+D:/workspace_cpp/cmake-3.7.1-win64-x64/share/cmake-3.7/Modules/FindPerl.cmake
+D:/workspace_cpp/cmake-3.7.1-win64-x64/share/cmake-3.7/Modules/FindCygwin.cmake
+D:/workspace_cpp/cmake-3.7.1-win64-x64/share/cmake-3.7/Modules/FindPackageHandleStandardArgs.cmake
+D:/workspace_cpp/cmake-3.7.1-win64-x64/share/cmake-3.7/Modules/FindPackageMessage.cmake
+D:/workspace_cpp/cmake-3.7.1-win64-x64/share/cmake-3.7/Modules/CMakeParseArguments.cmake

@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{50FDC505-AEB9-3042-811B-34E492701890}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>libobs-opengl</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace_cpp\obs-studio\build\libobs-opengl\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libobs-opengl.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libobs-opengl</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace_cpp\obs-studio\build\libobs-opengl\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libobs-opengl.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libobs-opengl</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\workspace_cpp\obs-studio\build\libobs-opengl\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libobs-opengl.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libobs-opengl</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\workspace_cpp\obs-studio\build\libobs-opengl\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libobs-opengl.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libobs-opengl</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\libobs;D:\workspace_cpp\obs-studio\build\config;D:\workspace_cpp\obs-studio\deps\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG=1;_DEBUG=1;_DEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;LIBOBS_EXPORTS;HAVE_OBSCONFIG_H;CMAKE_INTDIR="Debug";libobs_opengl_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG=1;_DEBUG=1;_DEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;LIBOBS_EXPORTS;HAVE_OBSCONFIG_H;CMAKE_INTDIR=\"Debug\";libobs_opengl_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\libobs;D:\workspace_cpp\obs-studio\build\config;D:\workspace_cpp\obs-studio\deps\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\libobs;D:\workspace_cpp\obs-studio\build\config;D:\workspace_cpp\obs-studio\deps\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>		</Message>
+      <Command>setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -E copy D:/workspace_cpp/obs-studio/build/libobs-opengl/Debug/libobs-opengl.dll D:/workspace_cpp/obs-studio/build/rundir/Debug/bin/64bit/libobs-opengl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -DCONFIG=Debug -DFNAME=libobs-opengl.dll -DINPUT=D:/workspace_cpp/obs-studio/build/libobs-opengl/Debug -DOUTPUT=D:/workspace_cpp/obs-studio/build/libobs-opengl/pdbs -P D:/workspace_cpp/obs-studio/cmake/copy_on_debug_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -DCONFIG=Debug -DFNAME=libobs-opengl.dll -DINPUT=D:/workspace_cpp/obs-studio/build/libobs-opengl/Debug -DOUTPUT=D:/workspace_cpp/obs-studio/build/rundir/Debug/bin/64bit -P D:/workspace_cpp/obs-studio/cmake/copy_on_debug_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\libobs\Debug\obs.lib;..\deps\glad\Debug\obsglad.lib;opengl32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/workspace_cpp/obs-studio/build/libobs-opengl/Debug/libobs-opengl.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/workspace_cpp/obs-studio/build/libobs-opengl/Debug/libobs-opengl.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\libobs;D:\workspace_cpp\obs-studio\build\config;D:\workspace_cpp\obs-studio\deps\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;LIBOBS_EXPORTS;HAVE_OBSCONFIG_H;CMAKE_INTDIR="Release";libobs_opengl_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;LIBOBS_EXPORTS;HAVE_OBSCONFIG_H;CMAKE_INTDIR=\"Release\";libobs_opengl_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\libobs;D:\workspace_cpp\obs-studio\build\config;D:\workspace_cpp\obs-studio\deps\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\libobs;D:\workspace_cpp\obs-studio\build\config;D:\workspace_cpp\obs-studio\deps\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>		</Message>
+      <Command>setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -E copy D:/workspace_cpp/obs-studio/build/libobs-opengl/Release/libobs-opengl.dll D:/workspace_cpp/obs-studio/build/rundir/Release/bin/64bit/libobs-opengl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -DCONFIG=Release -DFNAME=libobs-opengl.dll -DINPUT=D:/workspace_cpp/obs-studio/build/libobs-opengl/Release -DOUTPUT=D:/workspace_cpp/obs-studio/build/libobs-opengl/pdbs -P D:/workspace_cpp/obs-studio/cmake/copy_on_debug_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -DCONFIG=Release -DFNAME=libobs-opengl.dll -DINPUT=D:/workspace_cpp/obs-studio/build/libobs-opengl/Release -DOUTPUT=D:/workspace_cpp/obs-studio/build/rundir/Release/bin/64bit -P D:/workspace_cpp/obs-studio/cmake/copy_on_debug_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\libobs\Release\obs.lib;..\deps\glad\Release\obsglad.lib;opengl32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/workspace_cpp/obs-studio/build/libobs-opengl/Release/libobs-opengl.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/workspace_cpp/obs-studio/build/libobs-opengl/Release/libobs-opengl.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\libobs;D:\workspace_cpp\obs-studio\build\config;D:\workspace_cpp\obs-studio\deps\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;LIBOBS_EXPORTS;HAVE_OBSCONFIG_H;CMAKE_INTDIR="MinSizeRel";libobs_opengl_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;LIBOBS_EXPORTS;HAVE_OBSCONFIG_H;CMAKE_INTDIR=\"MinSizeRel\";libobs_opengl_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\libobs;D:\workspace_cpp\obs-studio\build\config;D:\workspace_cpp\obs-studio\deps\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\libobs;D:\workspace_cpp\obs-studio\build\config;D:\workspace_cpp\obs-studio\deps\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>		</Message>
+      <Command>setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -E copy D:/workspace_cpp/obs-studio/build/libobs-opengl/MinSizeRel/libobs-opengl.dll D:/workspace_cpp/obs-studio/build/rundir/MinSizeRel/bin/64bit/libobs-opengl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -DCONFIG=MinSizeRel -DFNAME=libobs-opengl.dll -DINPUT=D:/workspace_cpp/obs-studio/build/libobs-opengl/MinSizeRel -DOUTPUT=D:/workspace_cpp/obs-studio/build/libobs-opengl/pdbs -P D:/workspace_cpp/obs-studio/cmake/copy_on_debug_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -DCONFIG=MinSizeRel -DFNAME=libobs-opengl.dll -DINPUT=D:/workspace_cpp/obs-studio/build/libobs-opengl/MinSizeRel -DOUTPUT=D:/workspace_cpp/obs-studio/build/rundir/MinSizeRel/bin/64bit -P D:/workspace_cpp/obs-studio/cmake/copy_on_debug_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\libobs\MinSizeRel\obs.lib;..\deps\glad\MinSizeRel\obsglad.lib;opengl32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/workspace_cpp/obs-studio/build/libobs-opengl/MinSizeRel/libobs-opengl.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/workspace_cpp/obs-studio/build/libobs-opengl/MinSizeRel/libobs-opengl.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\libobs;D:\workspace_cpp\obs-studio\build\config;D:\workspace_cpp\obs-studio\deps\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;LIBOBS_EXPORTS;HAVE_OBSCONFIG_H;CMAKE_INTDIR="RelWithDebInfo";libobs_opengl_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;LIBOBS_EXPORTS;HAVE_OBSCONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\";libobs_opengl_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\libobs;D:\workspace_cpp\obs-studio\build\config;D:\workspace_cpp\obs-studio\deps\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\libobs;D:\workspace_cpp\obs-studio\build\config;D:\workspace_cpp\obs-studio\deps\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>		</Message>
+      <Command>setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -E copy D:/workspace_cpp/obs-studio/build/libobs-opengl/RelWithDebInfo/libobs-opengl.dll D:/workspace_cpp/obs-studio/build/rundir/RelWithDebInfo/bin/64bit/libobs-opengl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -DCONFIG=RelWithDebInfo -DFNAME=libobs-opengl.dll -DINPUT=D:/workspace_cpp/obs-studio/build/libobs-opengl/RelWithDebInfo -DOUTPUT=D:/workspace_cpp/obs-studio/build/libobs-opengl/pdbs -P D:/workspace_cpp/obs-studio/cmake/copy_on_debug_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -DCONFIG=RelWithDebInfo -DFNAME=libobs-opengl.dll -DINPUT=D:/workspace_cpp/obs-studio/build/libobs-opengl/RelWithDebInfo -DOUTPUT=D:/workspace_cpp/obs-studio/build/rundir/RelWithDebInfo/bin/64bit -P D:/workspace_cpp/obs-studio/cmake/copy_on_debug_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\libobs\RelWithDebInfo\obs.lib;..\deps\glad\RelWithDebInfo\obsglad.lib;opengl32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/workspace_cpp/obs-studio/build/libobs-opengl/RelWithDebInfo/libobs-opengl.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/workspace_cpp/obs-studio/build/libobs-opengl/RelWithDebInfo/libobs-opengl.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace_cpp\obs-studio\libobs-opengl\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/workspace_cpp/obs-studio/libobs-opengl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -HD:/workspace_cpp/obs-studio -BD:/workspace_cpp/obs-studio/build --check-stamp-file D:\workspace_cpp\obs-studio\build\libobs-opengl\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/workspace_cpp/obs-studio/libobs-opengl/CMakeLists.txt;D:\workspace_cpp\obs-studio\libobs-opengl\CMakeLists.txt;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindOpenGL.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageMessage.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\workspace_cpp\obs-studio\libobs-opengl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace_cpp\obs-studio\build\libobs-opengl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/workspace_cpp/obs-studio/libobs-opengl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -HD:/workspace_cpp/obs-studio -BD:/workspace_cpp/obs-studio/build --check-stamp-file D:\workspace_cpp\obs-studio\build\libobs-opengl\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/workspace_cpp/obs-studio/libobs-opengl/CMakeLists.txt;D:\workspace_cpp\obs-studio\libobs-opengl\CMakeLists.txt;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindOpenGL.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageMessage.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\workspace_cpp\obs-studio\libobs-opengl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace_cpp\obs-studio\build\libobs-opengl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/workspace_cpp/obs-studio/libobs-opengl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -HD:/workspace_cpp/obs-studio -BD:/workspace_cpp/obs-studio/build --check-stamp-file D:\workspace_cpp\obs-studio\build\libobs-opengl\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/workspace_cpp/obs-studio/libobs-opengl/CMakeLists.txt;D:\workspace_cpp\obs-studio\libobs-opengl\CMakeLists.txt;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindOpenGL.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageMessage.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\workspace_cpp\obs-studio\libobs-opengl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\workspace_cpp\obs-studio\build\libobs-opengl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/workspace_cpp/obs-studio/libobs-opengl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -HD:/workspace_cpp/obs-studio -BD:/workspace_cpp/obs-studio/build --check-stamp-file D:\workspace_cpp\obs-studio\build\libobs-opengl\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/workspace_cpp/obs-studio/libobs-opengl/CMakeLists.txt;D:\workspace_cpp\obs-studio\libobs-opengl\CMakeLists.txt;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindOpenGL.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageMessage.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\workspace_cpp\obs-studio\libobs-opengl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\workspace_cpp\obs-studio\build\libobs-opengl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\workspace_cpp\obs-studio\libobs-opengl\gl-helpers.h" />
+    <ClInclude Include="D:\workspace_cpp\obs-studio\libobs-opengl\gl-shaderparser.h" />
+    <ClInclude Include="D:\workspace_cpp\obs-studio\libobs-opengl\gl-subsystem.h" />
+    <ClCompile Include="D:\workspace_cpp\obs-studio\libobs-opengl\gl-windows.c"  />
+    <ClCompile Include="D:\workspace_cpp\obs-studio\libobs-opengl\gl-helpers.c"  />
+    <ClCompile Include="D:\workspace_cpp\obs-studio\libobs-opengl\gl-indexbuffer.c"  />
+    <ClCompile Include="D:\workspace_cpp\obs-studio\libobs-opengl\gl-shader.c"  />
+    <ClCompile Include="D:\workspace_cpp\obs-studio\libobs-opengl\gl-shaderparser.c"  />
+    <ClCompile Include="D:\workspace_cpp\obs-studio\libobs-opengl\gl-stagesurf.c"  />
+    <ClCompile Include="D:\workspace_cpp\obs-studio\libobs-opengl\gl-subsystem.c"  />
+    <ClCompile Include="D:\workspace_cpp\obs-studio\libobs-opengl\gl-texture2d.c"  />
+    <ClCompile Include="D:\workspace_cpp\obs-studio\libobs-opengl\gl-texturecube.c"  />
+    <ClCompile Include="D:\workspace_cpp\obs-studio\libobs-opengl\gl-vertexbuffer.c"  />
+    <ClCompile Include="D:\workspace_cpp\obs-studio\libobs-opengl\gl-zstencil.c"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/ZERO_CHECK.vcxproj">
+      <Project>74388FD1-BA1D-3A6F-B51D-6AF72BD69E4F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/deps/glad/glad.vcxproj">
+      <Project>80E7FD0D-B90B-3A66-9F68-4442F90B6013</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/libobs/libobs.vcxproj">
+      <Project>800805AD-13C5-3E02-A1EC-BB4952B83165</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

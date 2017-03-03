@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{4F4F5CAB-CE20-34AE-9A49-D22CF81E6723}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/workspace_cpp/obs-studio/plugins/obs-websocket/deps/mbedtls/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -HD:/workspace_cpp/obs-studio -BD:/workspace_cpp/obs-studio/build --check-stamp-file D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/workspace_cpp/obs-studio/plugins/obs-websocket/deps/mbedtls/CMakeLists.txt;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\CMakeLists.txt;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPerl.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindCygwin.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageMessage.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/workspace_cpp/obs-studio/plugins/obs-websocket/deps/mbedtls/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -HD:/workspace_cpp/obs-studio -BD:/workspace_cpp/obs-studio/build --check-stamp-file D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/workspace_cpp/obs-studio/plugins/obs-websocket/deps/mbedtls/CMakeLists.txt;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\CMakeLists.txt;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPerl.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindCygwin.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageMessage.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/workspace_cpp/obs-studio/plugins/obs-websocket/deps/mbedtls/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -HD:/workspace_cpp/obs-studio -BD:/workspace_cpp/obs-studio/build --check-stamp-file D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/workspace_cpp/obs-studio/plugins/obs-websocket/deps/mbedtls/CMakeLists.txt;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\CMakeLists.txt;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPerl.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindCygwin.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageMessage.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/workspace_cpp/obs-studio/plugins/obs-websocket/deps/mbedtls/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -HD:/workspace_cpp/obs-studio -BD:/workspace_cpp/obs-studio/build --check-stamp-file D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/workspace_cpp/obs-studio/plugins/obs-websocket/deps/mbedtls/CMakeLists.txt;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\CMakeLists.txt;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPerl.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindCygwin.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\FindPackageMessage.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/ZERO_CHECK.vcxproj">
+      <Project>74388FD1-BA1D-3A6F-B51D-6AF72BD69E4F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/aes/aescrypt2.vcxproj">
+      <Project>6EF8DEA5-7FB5-362F-ADE9-9BFD76591BB7</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/test/benchmark.vcxproj">
+      <Project>CF4DB0D4-069D-3C04-AC9A-AA706FCE3442</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/x509/cert_app.vcxproj">
+      <Project>84C058A5-85B3-3C08-A21E-9A094A2BD4DD</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/x509/cert_req.vcxproj">
+      <Project>0A0E3045-7324-3DCE-94F2-FC2A963D1CEC</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/x509/cert_write.vcxproj">
+      <Project>CBA0D058-D768-38EC-8BD3-D7C8984D107A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/x509/crl_app.vcxproj">
+      <Project>C4DA8B0E-2870-3913-9665-985F748FFFC1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/aes/crypt_and_hash.vcxproj">
+      <Project>ADA1BB1C-206C-3C01-B97A-DD8BF27A07B4</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/pkey/dh_client.vcxproj">
+      <Project>D38093CB-228E-388D-92EA-0725C24EEF26</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/pkey/dh_genprime.vcxproj">
+      <Project>3332D8F1-89A8-3110-8581-C6468A2CEE84</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/pkey/dh_server.vcxproj">
+      <Project>516635B5-0797-30E2-A1A2-0E180C0C0872</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/ssl/dtls_client.vcxproj">
+      <Project>52759E08-5012-3799-9100-63BB91271BD0</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/ssl/dtls_server.vcxproj">
+      <Project>4B8926E2-E1C1-3861-9017-E973508BA081</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/pkey/ecdh_curve25519.vcxproj">
+      <Project>64EF9F48-D49D-3422-99F8-6AB4F76A314E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/pkey/ecdsa.vcxproj">
+      <Project>07654615-2952-3D3D-9F9C-8C3D0B39E4F4</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/random/gen_entropy.vcxproj">
+      <Project>DC896942-155D-358D-AF49-F55F1A4F3A5C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/pkey/gen_key.vcxproj">
+      <Project>133A7C2B-3B61-3B09-A2F2-A074409C0936</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/random/gen_random_ctr_drbg.vcxproj">
+      <Project>D18C4F3A-749E-3D2E-BE25-64219C6E37FE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/random/gen_random_havege.vcxproj">
+      <Project>873091C0-F440-3440-8684-E4583B4046C0</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/hash/generic_sum.vcxproj">
+      <Project>ED1CEA16-444E-3A1D-876A-8D04659FBFFA</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/hash/hello.vcxproj">
+      <Project>790F928D-6A52-3436-9DE1-F416F414E979</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/pkey/key_app.vcxproj">
+      <Project>628BCDD0-63C5-339F-B8E1-5D3ED315DA61</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/pkey/key_app_writer.vcxproj">
+      <Project>4C8A800A-6BEB-3841-B6AB-F75550766BB8</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/library/mbedcrypto.vcxproj">
+      <Project>CBF10C60-1E2A-3CA8-9137-F595F39AF7FE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/library/mbedtls.vcxproj">
+      <Project>E9831ED2-48E1-315F-A65E-449F684902BB</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/library/mbedx509.vcxproj">
+      <Project>B338D43E-0578-33FB-8588-069DA984B80F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/ssl/mini_client.vcxproj">
+      <Project>C79665F6-4058-3B06-B1FF-03D0CD7A4BA9</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/pkey/mpi_demo.vcxproj">
+      <Project>3E4CFDC3-8BE8-31F1-BB4B-C3847E31E0FB</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/util/pem2der.vcxproj">
+      <Project>8E16EC7B-670F-392C-B4FB-2AA00EC7E027</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/pkey/pk_decrypt.vcxproj">
+      <Project>01359D71-255F-3237-A43A-451FDAB7C13A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/pkey/pk_encrypt.vcxproj">
+      <Project>51883115-3962-3041-8265-2DDB1C683BBF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/pkey/pk_sign.vcxproj">
+      <Project>39FBB02C-C39E-3E21-B7C7-172985818DA8</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/pkey/pk_verify.vcxproj">
+      <Project>296A8A62-5424-3F09-82D7-032C2A96698E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/x509/req_app.vcxproj">
+      <Project>2A433865-8376-3F00-832F-8BD31EC05B50</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/pkey/rsa_decrypt.vcxproj">
+      <Project>BCD524BB-647C-3463-94FC-0B91343C5EEA</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/pkey/rsa_encrypt.vcxproj">
+      <Project>2189A29D-ECFE-38A1-8589-EE9998BD606B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/pkey/rsa_genkey.vcxproj">
+      <Project>764333A4-22EC-3724-8075-331BCF1A0766</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/pkey/rsa_sign.vcxproj">
+      <Project>11F61902-79FE-3D84-B213-4E91731CB34D</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/pkey/rsa_sign_pss.vcxproj">
+      <Project>1603AA63-B00C-39A3-B93D-40C6CF3CD00E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/pkey/rsa_verify.vcxproj">
+      <Project>4EE12540-011F-3BF3-9842-687FB88A7C5F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/pkey/rsa_verify_pss.vcxproj">
+      <Project>E02D7A09-58D3-3570-BB16-3493C282E5F2</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/test/selftest.vcxproj">
+      <Project>1C0A3908-CC2D-360E-9873-B9459791BD8C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/test/ssl_cert_test.vcxproj">
+      <Project>9DC46E1B-1436-3A65-BC27-9D58059C8CF6</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/ssl/ssl_client1.vcxproj">
+      <Project>09CEED9B-F759-3B67-88B2-3BCF9D24B36C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/ssl/ssl_client2.vcxproj">
+      <Project>14866BDA-B14A-3801-BC98-A12654717A3F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/ssl/ssl_fork_server.vcxproj">
+      <Project>10B1CF4C-F382-35C4-AA0E-5F4242237DD6</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/ssl/ssl_mail_client.vcxproj">
+      <Project>2BD235E5-F153-30FF-B149-44420BFF9A5C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/ssl/ssl_pthread_server.vcxproj">
+      <Project>6FF2EE8B-60EA-381D-B74A-B51FB7BFD10C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/ssl/ssl_server.vcxproj">
+      <Project>A1C7E284-292B-35E3-B4C0-E30417233718</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/ssl/ssl_server2.vcxproj">
+      <Project>740A70A0-7FB7-343A-A3CD-8ED7477B420A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/util/strerror.vcxproj">
+      <Project>31492D24-14B7-356A-BB81-F95DF3AD522C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/programs/test/udp_proxy.vcxproj">
+      <Project>926F48D1-9423-3167-A0BD-4835985CF6F6</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

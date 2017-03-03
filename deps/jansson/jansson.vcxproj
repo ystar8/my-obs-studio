@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{ECE47194-4F08-3C4C-8B57-77BDFABB743A}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>jansson</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace_cpp\obs-studio\build\deps\jansson\lib\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">jansson.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">jansson_d</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace_cpp\obs-studio\build\deps\jansson\lib\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">jansson.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">jansson</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\workspace_cpp\obs-studio\build\deps\jansson\lib\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">jansson.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">jansson</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\workspace_cpp\obs-studio\build\deps\jansson\lib\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">jansson.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">jansson</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\build\deps\jansson\include;D:\workspace_cpp\obs-studio\build\deps\jansson\private_include;D:\workspace_cpp\obs-studio\deps\jansson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4005;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG=1;_DEBUG=1;_DEBUG;_CRT_SECURE_NO_WARNINGS;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;HAVE_CONFIG_H;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG=1;_DEBUG=1;_DEBUG;_CRT_SECURE_NO_WARNINGS;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\build\deps\jansson\include;D:\workspace_cpp\obs-studio\build\deps\jansson\private_include;D:\workspace_cpp\obs-studio\deps\jansson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\build\deps\jansson\include;D:\workspace_cpp\obs-studio\build\deps\jansson\private_include;D:\workspace_cpp\obs-studio\deps\jansson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\build\deps\jansson\include;D:\workspace_cpp\obs-studio\build\deps\jansson\private_include;D:\workspace_cpp\obs-studio\deps\jansson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4005;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;HAVE_CONFIG_H;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\build\deps\jansson\include;D:\workspace_cpp\obs-studio\build\deps\jansson\private_include;D:\workspace_cpp\obs-studio\deps\jansson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\build\deps\jansson\include;D:\workspace_cpp\obs-studio\build\deps\jansson\private_include;D:\workspace_cpp\obs-studio\deps\jansson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\build\deps\jansson\include;D:\workspace_cpp\obs-studio\build\deps\jansson\private_include;D:\workspace_cpp\obs-studio\deps\jansson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4005;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;HAVE_CONFIG_H;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;HAVE_CONFIG_H;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\build\deps\jansson\include;D:\workspace_cpp\obs-studio\build\deps\jansson\private_include;D:\workspace_cpp\obs-studio\deps\jansson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\build\deps\jansson\include;D:\workspace_cpp\obs-studio\build\deps\jansson\private_include;D:\workspace_cpp\obs-studio\deps\jansson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\build\deps\jansson\include;D:\workspace_cpp\obs-studio\build\deps\jansson\private_include;D:\workspace_cpp\obs-studio\deps\jansson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4005;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;HAVE_CONFIG_H;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;HAVE_CONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\build\deps\jansson\include;D:\workspace_cpp\obs-studio\build\deps\jansson\private_include;D:\workspace_cpp\obs-studio\deps\jansson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\build\deps\jansson\include;D:\workspace_cpp\obs-studio\build\deps\jansson\private_include;D:\workspace_cpp\obs-studio\deps\jansson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace_cpp\obs-studio\deps\jansson\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/workspace_cpp/obs-studio/deps/jansson/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -HD:/workspace_cpp/obs-studio -BD:/workspace_cpp/obs-studio/build --check-stamp-file D:\workspace_cpp\obs-studio\build\deps\jansson\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/workspace_cpp/obs-studio/deps/jansson/CMakeLists.txt;D:\workspace_cpp\obs-studio\deps\jansson\CMakeLists.txt;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckFunctionExists.cmake;D:\workspace_cpp\obs-studio\deps\jansson\cmake\CheckFunctionKeywords.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckCSourceCompiles.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckIncludeFiles.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckTypeSize.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckIncludeFile.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckSymbolExists.cmake;D:\workspace_cpp\obs-studio\deps\jansson\jansson.pc.in;D:\workspace_cpp\obs-studio\deps\jansson\cmake\jansson_config.h.cmake;D:\workspace_cpp\obs-studio\deps\jansson\cmake\config.h.cmake;D:\workspace_cpp\obs-studio\deps\jansson\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace_cpp\obs-studio\build\deps\jansson\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/workspace_cpp/obs-studio/deps/jansson/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -HD:/workspace_cpp/obs-studio -BD:/workspace_cpp/obs-studio/build --check-stamp-file D:\workspace_cpp\obs-studio\build\deps\jansson\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/workspace_cpp/obs-studio/deps/jansson/CMakeLists.txt;D:\workspace_cpp\obs-studio\deps\jansson\CMakeLists.txt;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckFunctionExists.cmake;D:\workspace_cpp\obs-studio\deps\jansson\cmake\CheckFunctionKeywords.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckCSourceCompiles.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckIncludeFiles.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckTypeSize.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckIncludeFile.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckSymbolExists.cmake;D:\workspace_cpp\obs-studio\deps\jansson\jansson.pc.in;D:\workspace_cpp\obs-studio\deps\jansson\cmake\jansson_config.h.cmake;D:\workspace_cpp\obs-studio\deps\jansson\cmake\config.h.cmake;D:\workspace_cpp\obs-studio\deps\jansson\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace_cpp\obs-studio\build\deps\jansson\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/workspace_cpp/obs-studio/deps/jansson/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -HD:/workspace_cpp/obs-studio -BD:/workspace_cpp/obs-studio/build --check-stamp-file D:\workspace_cpp\obs-studio\build\deps\jansson\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/workspace_cpp/obs-studio/deps/jansson/CMakeLists.txt;D:\workspace_cpp\obs-studio\deps\jansson\CMakeLists.txt;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckFunctionExists.cmake;D:\workspace_cpp\obs-studio\deps\jansson\cmake\CheckFunctionKeywords.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckCSourceCompiles.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckIncludeFiles.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckTypeSize.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckIncludeFile.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckSymbolExists.cmake;D:\workspace_cpp\obs-studio\deps\jansson\jansson.pc.in;D:\workspace_cpp\obs-studio\deps\jansson\cmake\jansson_config.h.cmake;D:\workspace_cpp\obs-studio\deps\jansson\cmake\config.h.cmake;D:\workspace_cpp\obs-studio\deps\jansson\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\workspace_cpp\obs-studio\build\deps\jansson\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/workspace_cpp/obs-studio/deps/jansson/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -HD:/workspace_cpp/obs-studio -BD:/workspace_cpp/obs-studio/build --check-stamp-file D:\workspace_cpp\obs-studio\build\deps\jansson\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/workspace_cpp/obs-studio/deps/jansson/CMakeLists.txt;D:\workspace_cpp\obs-studio\deps\jansson\CMakeLists.txt;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckFunctionExists.cmake;D:\workspace_cpp\obs-studio\deps\jansson\cmake\CheckFunctionKeywords.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckCSourceCompiles.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckIncludeFiles.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckTypeSize.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckIncludeFile.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckSymbolExists.cmake;D:\workspace_cpp\obs-studio\deps\jansson\jansson.pc.in;D:\workspace_cpp\obs-studio\deps\jansson\cmake\jansson_config.h.cmake;D:\workspace_cpp\obs-studio\deps\jansson\cmake\config.h.cmake;D:\workspace_cpp\obs-studio\deps\jansson\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\workspace_cpp\obs-studio\build\deps\jansson\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\deps\jansson\src\dump.c"  />
+    <ClCompile Include="D:\workspace_cpp\obs-studio\deps\jansson\src\error.c"  />
+    <ClCompile Include="D:\workspace_cpp\obs-studio\deps\jansson\src\hashtable.c"  />
+    <ClCompile Include="D:\workspace_cpp\obs-studio\deps\jansson\src\load.c"  />
+    <ClCompile Include="D:\workspace_cpp\obs-studio\deps\jansson\src\memory.c"  />
+    <ClCompile Include="D:\workspace_cpp\obs-studio\deps\jansson\src\pack_unpack.c"  />
+    <ClCompile Include="D:\workspace_cpp\obs-studio\deps\jansson\src\strbuffer.c"  />
+    <ClCompile Include="D:\workspace_cpp\obs-studio\deps\jansson\src\strconv.c"  />
+    <ClCompile Include="D:\workspace_cpp\obs-studio\deps\jansson\src\utf.c"  />
+    <ClCompile Include="D:\workspace_cpp\obs-studio\deps\jansson\src\value.c"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/ZERO_CHECK.vcxproj">
+      <Project>74388FD1-BA1D-3A6F-B51D-6AF72BD69E4F</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

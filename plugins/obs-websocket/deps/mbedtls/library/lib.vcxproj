@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{045B6B4F-A85F-3516-99BA-963D6A06BBCC}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>lib</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/workspace_cpp/obs-studio/plugins/obs-websocket/deps/mbedtls/library/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -HD:/workspace_cpp/obs-studio -BD:/workspace_cpp/obs-studio/build --check-stamp-file D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/workspace_cpp/obs-studio/plugins/obs-websocket/deps/mbedtls/library/CMakeLists.txt;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\CMakeLists.txt;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\AutogenInfo.cmake.in;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\AutogenInfo.cmake.in;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\AutogenInfo.cmake.in;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/workspace_cpp/obs-studio/plugins/obs-websocket/deps/mbedtls/library/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -HD:/workspace_cpp/obs-studio -BD:/workspace_cpp/obs-studio/build --check-stamp-file D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/workspace_cpp/obs-studio/plugins/obs-websocket/deps/mbedtls/library/CMakeLists.txt;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\CMakeLists.txt;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\AutogenInfo.cmake.in;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\AutogenInfo.cmake.in;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\AutogenInfo.cmake.in;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/workspace_cpp/obs-studio/plugins/obs-websocket/deps/mbedtls/library/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -HD:/workspace_cpp/obs-studio -BD:/workspace_cpp/obs-studio/build --check-stamp-file D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/workspace_cpp/obs-studio/plugins/obs-websocket/deps/mbedtls/library/CMakeLists.txt;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\CMakeLists.txt;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\AutogenInfo.cmake.in;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\AutogenInfo.cmake.in;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\AutogenInfo.cmake.in;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/workspace_cpp/obs-studio/plugins/obs-websocket/deps/mbedtls/library/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\workspace_cpp\cmake-3.7.1-win64-x64\bin\cmake.exe -HD:/workspace_cpp/obs-studio -BD:/workspace_cpp/obs-studio/build --check-stamp-file D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/workspace_cpp/obs-studio/plugins/obs-websocket/deps/mbedtls/library/CMakeLists.txt;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\CMakeLists.txt;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\AutogenInfo.cmake.in;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\AutogenInfo.cmake.in;D:\workspace_cpp\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\AutogenInfo.cmake.in;D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\library\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace_cpp\obs-studio\build\CMakeFiles\1a11a75c44ce711c49b8f157e956c019\lib.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/workspace_cpp/obs-studio/build/CMakeFiles/1a11a75c44ce711c49b8f157e956c019/lib.rule;D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library\Debug\mbedcrypto.lib;D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library\Debug\mbedx509.lib;D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library\Debug\mbedtls.lib;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library\CMakeFiles\lib</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/workspace_cpp/obs-studio/build/CMakeFiles/1a11a75c44ce711c49b8f157e956c019/lib.rule;D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library\Release\mbedcrypto.lib;D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library\Release\mbedx509.lib;D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library\Release\mbedtls.lib;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library\CMakeFiles\lib</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/workspace_cpp/obs-studio/build/CMakeFiles/1a11a75c44ce711c49b8f157e956c019/lib.rule;D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library\MinSizeRel\mbedcrypto.lib;D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library\MinSizeRel\mbedx509.lib;D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library\MinSizeRel\mbedtls.lib;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library\CMakeFiles\lib</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/workspace_cpp/obs-studio/build/CMakeFiles/1a11a75c44ce711c49b8f157e956c019/lib.rule;D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library\RelWithDebInfo\mbedcrypto.lib;D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library\RelWithDebInfo\mbedx509.lib;D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library\RelWithDebInfo\mbedtls.lib;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library\CMakeFiles\lib</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\library\CMakeFiles\lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/ZERO_CHECK.vcxproj">
+      <Project>74388FD1-BA1D-3A6F-B51D-6AF72BD69E4F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/library/mbedcrypto.vcxproj">
+      <Project>CBF10C60-1E2A-3CA8-9137-F595F39AF7FE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/library/mbedtls.vcxproj">
+      <Project>E9831ED2-48E1-315F-A65E-449F684902BB</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_cpp/obs-studio/build/plugins/obs-websocket/deps/mbedtls/library/mbedx509.vcxproj">
+      <Project>B338D43E-0578-33FB-8588-069DA984B80F</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

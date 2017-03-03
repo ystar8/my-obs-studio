@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\programs\pkey\key_app.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_cpp\obs-studio\build\plugins\obs-websocket\deps\mbedtls\programs\pkey\key_app_automoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace_cpp\obs-studio\plugins\obs-websocket\deps\mbedtls\programs\pkey\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8E564DFA-C133-3A8C-B009-A40265BDF416}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

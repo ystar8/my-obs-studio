@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+D:/workspace_cpp/obs-studio/libobs-opengl/CMakeLists.txt
+D:/workspace_cpp/cmake-3.7.1-win64-x64/share/cmake-3.7/Modules/FindOpenGL.cmake
+D:/workspace_cpp/cmake-3.7.1-win64-x64/share/cmake-3.7/Modules/FindPackageHandleStandardArgs.cmake
+D:/workspace_cpp/cmake-3.7.1-win64-x64/share/cmake-3.7/Modules/FindPackageMessage.cmake
+D:/workspace_cpp/cmake-3.7.1-win64-x64/share/cmake-3.7/Modules/CMakeParseArguments.cmake
